@@ -1,0 +1,61 @@
+<!--
+    Nama File   : index.html
+    NIM         : 11S20040
+    Kelas       : 13 IF 2
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+    h1{
+		background-color: rgb(237, 225, 224);
+		font-size: auto;
+		width: 500px;	
+	}
+
+	fieldset{
+		background-color: rgb(4, 155, 155);
+		font-size: auto;
+		width: 500px;
+	}
+
+	.box{
+		padding:100px 450px;
+	}
+
+	</style>
+	<meta charset="utf-8">
+	<title>Form Login</title>
+</head>
+<body>
+	<div class="box">
+	
+    <h1><a href="login.html" target="sukses.html">Form Login</a></h1>
+	<form action="sukses.html">
+		<hr>
+		<fieldset>
+			<legend>Masukan akun anda di sini</legend>
+			<table>
+				<tr>
+					<td><label><b>Username</b></label></td>
+					<td><label>:</label></td>
+					<td align="left"><input type="text" name="username" placeholder="username..." maxlength="8"></td>
+				</tr>
+				<tr>
+					<td><label><b>Password</b></label></td>
+					<td><label>:</label></td>
+					<td align="left"><input type="password" name="password" placeholder="password..." minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></td>
+                        
+				</tr>
+				<tr>
+					<td><a href="sukses.html"><input type="submit" name="submit" value="Login"></a></td>
+					<td><label></label></td>
+					<td align="left"><a href="forgotten.html">Forgot username/password</a></td>
+				</tr>
+			</table>	
+		</fieldset>
+	</form>
+</div>
+</body>
+</html>

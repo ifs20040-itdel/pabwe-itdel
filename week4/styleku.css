@@ -1,0 +1,121 @@
+/*
+    Nama File   : index.html
+    NIM         : 11S20040
+    Kelas       : 13 IF 2
+*/
+
+.lbl{
+    width:90px; /*sesuaikan*/
+    display:inline-block;
+    }
+.lbl2{
+      width:20px; /*sesuaikan*/
+      display:inline-block;
+      }
+    
+    table, th, td {
+      border: 3px solid black;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      padding: 5px;
+      text-align: left;    
+    }
+    * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family:'Times New Roman', Times, serif;
+      }
+      
+      /* Style the header */
+      header {
+        height: 180px;
+        width: 1024px;
+        background-color: rgb(4, 155, 155);
+        border: 1px solid black;
+        padding: px;
+        text-align: center;
+      }
+      
+      /* Container for flexboxes */
+      section {
+        display: -webkit-flex;
+        display: flex;
+        width: 1024px;
+      }
+      
+      /* Style the navigation menu */
+      nav {
+        padding: 20px;
+        width: 264px;
+        background: rgba(112, 207, 226, 0.96);
+        height: auto;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+      }
+      
+      /* Style the list inside the menu */  
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+  
+      /* Style the content */
+      article {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        padding: 10px;
+        width: 750px;
+        height:auto;
+        border-left: 1px solid black;
+      }
+
+      /* Style the footer */
+      footer {
+        padding: auto;
+        text-align: center;
+        background-color: rgb(4, 155, 155);
+        width: 1024px;
+        height: 70px;
+        border: 1px solid black;
+      }
+
+      .link{
+
+        padding:42%;
+     }
+
+     .link button{
+        padding:7px;
+        background-color: rgb(4, 155, 155);
+        margin-right:30px;
+     }
+
+     #login-sukses{
+      text-align:center;
+      padding:100px;
+     }
+
+    .box11{
+      width: 500px;
+      border-style: solid;
+      margin: 60px auto;
+    }
+
+    .kotak{
+      margin-left: 120px;
+      margin-top: 100px;
+    }
+      
+      /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+      @media (max-width: 600px) 
+      {
+          section {
+            -webkit-flex-direction: column;
+            flex-direction: column;
+          }
+      }
