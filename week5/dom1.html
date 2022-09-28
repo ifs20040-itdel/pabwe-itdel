@@ -1,0 +1,70 @@
+<!--
+    Nama File : dom1.html
+    NIM       : 11S20040
+    Kelas     : 13 IF 2
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom1_11S20040</title>
+    
+</head>
+<body>
+    <div class= "card">
+        <div class="card-body">
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <p>Masukkan Nama Anda :</p>
+                        </td>
+                        <td> 
+                            <input id="inputName" type="text" class="form-control"
+                            placeholder="Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button class="btn btn-success" type="button"
+                            onclick="displayName();">Insert</button></td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <h4 style="margin-top: 2px; margin-bottom: 9px; " id="infoName" >Nama Saya Adalah: <span id="displayName"></span></h4>
+                        </td>
+                    </tr>
+            
+                </table>
+                <button type ="button" onclick="changeColor()" class="btn btn-primary">Ganti Warna</button>
+            </form>
+    </div>
+    </div>
+
+    <style>
+        .textColor{
+            color: rgb(0, 68, 255);
+        }
+    </style>
+
+    <script>
+        function displayName(){
+            let name = document.getElementById("inputName").value;
+            document.getElementById("displayName").innerText = name;
+
+        }
+       
+        //WARNA
+
+        function changeColor(){
+
+        document.getElementById("infoName").classList.toggle("textColor");
+
+        }
+      
+    </script>
+</body>
+</html>

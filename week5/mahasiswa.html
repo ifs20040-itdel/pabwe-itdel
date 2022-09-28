@@ -1,0 +1,76 @@
+<!--
+    Nama File : mahasiswa.html
+    NIM       : 11S20040
+    Kelas     : 13 IF 2
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pemograman Javascript 6</title>
+    <script src="skripKu.js"></script>
+</head>
+
+<body>
+    <div style="margin: auto; max-width: fit-content; border: 1px solid black; ;">
+    <table>
+        <form name="frmRegister" method="post" action="" onsubmit="return validate(this);">
+            <tr>
+                <td><label for="name">Nama Saya </label></td>
+                <td> : </td>
+                <td><input type="text" name="name" id="name" size="12" /></td>
+            </tr>
+            <tr>
+                <td><label for="place">Tempat Lahir Saya </label></td>
+                <td> : </td>
+                <td><input type="text" name="place" id="place" size="12" /></td>
+            </tr>
+            <tr>
+                <td><label for="date">Tanggal Lahir Saya </label></td>
+                <td> : </td>
+                <td><input type="date" name="date" id="date" size="12" /></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Jenis Kelamin Saya </label></td>
+                <td> : </td>
+                <td><select name="gender" id="gender">
+                        <option value="Perempuan">Perempuan</option>
+                        <option value="lakilaki">Laki-laki</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="school">Pendidikan Terakhir Saya </label></td>
+                <td> : </td>
+                <td><select name="school" id="school">
+                        <option value="SD">SD</option>
+                        <option value="SMP">SMP</option>
+                        <option value="SMA">SMA</option>
+                        <option value="Sarjana">Sarjana</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </form>
+    </table>
+    <div style="margin-left: 80%; margin-top: 30px;">
+        <button style="justify-content: center; display: flex;" type="button" onclick="myDom()" id="button">Insert</button>
+    </div>
+</div>
+
+<div style="margin: auto; max-width: fit-content; margin-top: 40px;">
+    <p id="nama"></p>
+    <p id="tempat"></p>
+    <p id="tanggal"></p>
+    <p id="jenis"></p>
+    <p id="pendidikan"></p>
+</div>
+    
+
+</body>
+
+</html>
