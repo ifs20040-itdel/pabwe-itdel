@@ -24,7 +24,7 @@
                     <a href="week4/index.html" class="list-group-item list-group-item-action">Minggu Ke-4</a>
                     <a href="week5/mahasiswa.html" class="list-group-item list-group-item-action">Minggu Ke-5</a>
                     <a href="week9/krs.php" class="list-group-item list-group-item-action">Minggu Ke-9</a>
-                    <a href="week10/web.php" class="list-group-item list-group-item-action">Minggu Ke-10</a>
+                    <a href="http://127.0.0.1:8000/welcome/welcoming" class="list-group-item list-group-item-action">Minggu Ke-10</a>
                 </div>
             </div>
         </div>
